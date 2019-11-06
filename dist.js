@@ -1,6 +1,6 @@
 'use strict';
 var Bitcore = require('bitcore-lib');
-var QRCode = require('react-qr');
+var QRCode = require('qrcode.react');
 var React = require('react');
 
 var BitcoinQRCode = React.createClass({
@@ -24,7 +24,7 @@ var BitcoinQRCode = React.createClass({
             },
             React.createElement(
                 QRCode, {
-                    text: uri.toString()
+                    value: uri.toString()
                 }
             )
         );
